@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2048 test page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="knockout-3.4.2.js"></script>
+
+    <style>
+        h1 {
+            padding: 10px;
+        }
+
+        body {
+            background: lightsteelblue;
+        }
+
+        .container {
+            width: 500px;
+            align-content: center;
+            margin-top: 10px;
+            background-color: rgb(197, 56, 185);
+        }
+
+        #myCanvas {
+        
+            margin-top: 5px;
+            width: 500px;
+            height: 500px;
+            background-color: lightpink;
+        }
+
+        label {
+            padding: 5px;
+        }
+
+        .row {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row " style="background-color:palegoldenrod">
+            <div class="col-sm-5" align="justify">
+                <h1>2048 test</h1>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="row">
+                    <label class="col-form-label">Score</label>
+                    <input type="text" disabled=true class="form-control" id="score">
+                </div>
+
+                <div class="row">
+                    <label class="col-form-label">High Score</label>
+                    <input type="text" disabled=true class="form-control" id="highScore">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="align-content:center">
+            <canvas id="myCanvas"></canvas>
+
+        </div>
+
+
+    </div>
+
+    <script src="games.js"></script>
+</body>
+
+</html>
